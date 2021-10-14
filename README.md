@@ -27,7 +27,14 @@ Challenge 14
 
 ## Delivery 4 
 ## Study Design: MechaCar vs Competition
-
+### What metric or metrics are you going to test?
+#### When talking about stadistics, you need to understand the business. We need to compare variables that are related and who our customer is. Are we comparing cars in general? Are we only comparing electrical cars? Is it only city cars? Where are we dring them?
+### What is the null hypothesis or alternative hypothesis?
+#### <img width="515" alt="Screen Shot 2021-10-12 at 7 43 08 PM" src="https://user-images.githubusercontent.com/25726054/137407235-50ecdbed-f9a6-48cc-b374-442cfc28c402.png">
+### What statistical test would you use to test the hypothesis? And why?
+#### It really depends on the goal. To keep it simple, we could use lineal regression. In here we want to predict values from an independt variable. Lets say we want to test how far can a car go with X amount of gallons. 
+### What data is needed to run the statistical test?
+#### One dependant and one independat variable. 
 
 
 ## EXTRA
