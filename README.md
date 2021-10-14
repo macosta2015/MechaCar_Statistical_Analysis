@@ -21,3 +21,5 @@ Challenge 14
 
 
 ## Delivery 3
+### We are now using t.test to see determine if the PSE across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+<img width="363" alt="Screen Shot 2021-10-14 at 6 46 13 PM" src="https://user-images.githubusercontent.com/25726054/137405595-e793ac40-507d-46a0-a475-7a8cfde4b979.png">
