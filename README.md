@@ -16,7 +16,7 @@ Challenge 14
 <img width="258" alt="Screen Shot 2021-10-14 at 6 33 10 PM" src="https://user-images.githubusercontent.com/25726054/137404536-5593a083-e53f-41c8-8a01-b3aa010657b0.png">
 
 
-### We then use 
+### We then use Lot_summary and we get the following output. It is shwoing us each Lot as compared to the previous Lot.
 <img width="373" alt="Screen Shot 2021-10-14 at 6 34 42 PM" src="https://user-images.githubusercontent.com/25726054/137404665-d20fec3c-ff39-4f5b-a64c-afa7abd6362e.png">
 
 
