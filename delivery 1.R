@@ -20,28 +20,41 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 # Generate multiple linear regression model
 
 
+ggpairs(used_cars) 
+
+
+####
+# Delivery 2
+# Read Suspension_Coil.csv
+# suspen_data <- read.csv('Data/Suspension_Coil.csv')
+suspension_cars <- read.csv('/Users/marioacosta/Documents/GitHub/R_Analysis/Suspension_Coil.csv',stringsAsFactors = F)
+
+# Head view of the data
+head(suspension_cars)
+
+# Get the columns names
+colnames(suspension_cars)
+
+total_summary <- suspension_cars %>% group_by() %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+
 
 
 
 ####
-#generate summary statistics
-summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mechaCar_data)) 
+# Delivery3
 
-## It's multivaribale regression plot. Library GGally
-ggpairs(mechaCar_data) 
+#t-test across all manufacturing lots against the population mean = 1500 PSI
+t.test(suspension_cars$PSI, mu=1500)
 
-# Delivery 2
-# Read Suspension_Coil.csv
-suspen_data <- read.csv('Data/Suspension_Coil.csv')
 
-# Head view of the data
-head(suspen_data)
+#t-test lot1 against population mean = 1500 PSI
+lot1 <- suspension_cars %>% subset(Manufacturing_Lot=="Lot1")
+t.test(lot1$PSI, mu=1500)
 
-# Get the columns names
-colnames(suspen_data)
+#t-test lot2 against population mean = 1500 PSI
+lot2 <- suspension_cars %>% subset(Manufacturing_Lot=="Lot2")
+t.test(lot2$PSI, mu=1500)
 
-# Create a data frame with statics info
-total_summary <- suspen_data %>% group_by() %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
-
-# Create a data frame with statics info with group by
-lot_summary<- suspen_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+#t-test lot3 against population mean = 1500 PSI
+lot3 <- suspension_cars %>% subset(Manufacturing_Lot=="Lot3")
+t.test(lot3$PSI, mu=1500)
