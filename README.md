@@ -23,3 +23,14 @@ Challenge 14
 ## Delivery 3
 ### We are now using t.test to see determine if the PSE across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 <img width="363" alt="Screen Shot 2021-10-14 at 6 46 13 PM" src="https://user-images.githubusercontent.com/25726054/137405595-e793ac40-507d-46a0-a475-7a8cfde4b979.png">
+
+
+## Delivery 4 
+## Study Design: MechaCar vs Competition
+
+
+
+## EXTRA
+### Please note that we can see what the function will do in R by using the following:
+### This is pretty handy because it tells you how the function works. 
+<img width="619" alt="Screen Shot 2021-10-14 at 6 55 30 PM" src="https://user-images.githubusercontent.com/25726054/137406370-94c27e14-6ccb-4a41-8bb9-d95330c16c33.png">
